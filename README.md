@@ -1,5 +1,13 @@
 # Uni
 
+Domain Overview
+
+The intended users of the system are prospective postgraduate students and postgraduate officers at the postgraduate institute. Prospective postgraduate students should send an application for new admissions. A sample application is given in page 03 and 04 . The application has three main sections: 
+1.	Personal information section 
+2.	Educational and Professional qualification section 
+3.	Details of the Intended program section.
+Assume that postgraduate studies will be offered in five subjects: Computer Science, Mathematics, Statistics, Chemistry and Physics. For each subject a postgraduate officer is assigned to manage students who are applying for that subject. Also prospective students could apply for graduate assistantships and fellowships to cover up there financial requirements.
+
 Schema
 
 CREATE TABLE `login` (
