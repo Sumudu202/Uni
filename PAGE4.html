@@ -1,0 +1,68 @@
+<HTML>
+<HEAD>
+<TITLE> Student Registration </TITLE>
+</HEAD>
+<BODY BGCOLOR="ccffcc">
+<H2>Section 3 : DETAILS OF INTENDED PROGRAM </H2>
+<FORM NAME="proposal" OnSubmit="isReady(this);" METHOD="post" ACTION="DO_UPLOAD.php" ENCTYPE="multipart/form-data">
+	<FONT SIZE="4"> <B>Research Proposal: Attach a two page research proposal </B> </FONT>	
+	<BR><BR><INPUT TYPE="file" NAME="proposal" SIZE="30">
+	<INPUT NAME="button1" TYPE="submit" VALUE="UPLOAD"/>
+</FORM>
+<HR>
+<FORM NAME="application" OnSubmit="isReady(this);" METHOD="post" ACTION="PAGE4.php" >
+<TABLE>		
+			<TR>
+			<TD> <H3>Admission requested for </TD> <TD> <H3> <INPUT TYPE="text" NAME="year" SIZE="10"> </TD><TD><H3> Fall <INPUT TYPE="radio" NAME="season" VALUE="F" >  Spring <INPUT TYPE="radio" NAME="season" VALUE="S" > </TD>
+			</TR>
+			<TR> </TR>
+			<TR>
+			<TD><H3>Plan to Attend </TD> <TD COLSPAN=2> <H3> Full-time <INPUT TYPE="radio" NAME="fullpart" VALUE="F" >  Part-time <INPUT TYPE="radio" NAME="fullpart" VALUE="P"></TD>
+			</TR>
+			<TR> </TR>
+			<TR>
+			<TD><H3>Degree Sought </TD> <TD><H3><INPUT TYPE="text" NAME="sodegree" SIZE="20" /> </TD>
+			</TR>
+			<TR> </TR>
+			<TR>
+			<TD><H3>Field of Study: </TD> <TD><H3>
+			<SELECT NAME="fos">	
+				<OPTION VALUE="" selected>[Select Academic Field]	
+				<OPTION VALUE="Computer Science">Computer Science
+				<OPTION VALUE="Mathematics">Mathematics
+				<OPTION VALUE="Statistics">Statistics
+				<OPTION VALUE="Chemistry">Chemistry
+				<OPTION VALUE="Physics">Physics
+			</SELECT> </TD>
+			</TR>
+			<TR> </TR>
+			<TR>
+			<TD COLSPAN=2> <H3>Are you appling for a Graduate Assistantship or Felloship? </TD> <TD><H3> Yes <INPUT TYPE="radio" NAME="fellow" VALUE="Y" >  No <INPUT TYPE="radio" NAME="fellow" VALUE="N" > </TD>
+			</TR>
+			<TR> </TR>
+			<TR>
+			<TD COLSPAN=2><B>I hereby waive my rights to inspect letters of recommendation. &nbsp &nbsp Yes <INPUT TYPE="radio" NAME="certify" VALUE="Y" >  No <INPUT TYPE="radio" NAME="certify" VALUE="N" ></TD>
+			</TR>
+			<TR></TR>
+			<TR></TR>
+			<TR></TR>
+			<TR>
+			<TD><H4> ACADEMIC OR EMPLOYER REFERENCES </TD> <TD><I><B> (contact department for requirments.) </B></I> </TD> 
+			</TR>
+			<TABLE BORDER=1>
+				<TH><B><FONT SIZE="4"> Name </FONT> </TH> <TH><B> <FONT SIZE="4"> Address </FONT></TH>
+				<TR>
+				<TD><INPUT TYPE="text" NAME="ref1" SIZE="40"> </TD> <TD ><TEXTAREA NAME="add1" SIZE="248"></TEXTAREA></TD>
+				</TR>
+				<TR>
+				<TD><INPUT TYPE="text" NAME="ref2" SIZE="40"> </TD> <TD ><TEXTAREA NAME="add2" width="248"></TEXTAREA></TD>
+			</TABLE>
+			
+			<TR>
+			<TD><INPUT NAME="button1" TYPE="submit" VALUE="FINISH"> </TD>
+			</TR>
+</TABLE>
+</FORM>
+
+</BODY>		
+</HTML>

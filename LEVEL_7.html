@@ -1,0 +1,73 @@
+<?php
+echo "<H3><I>Welcome </I>";
+echo $_COOKIE["user"];
+echo "<I> Submit Your Application Online! </I>";
+?>
+
+<HTML>
+<HEAD>
+<TITLE> Student Registration </TITLE>
+<script LANGUAGE="javascript" SRC="LEVEL_7.js">
+</script>
+</HEAD>
+
+<BODY BGCOLOR="ccffcc">
+<H1> FACULTY OF SCIENCE - OFFICE OF POSTGRADUATE STUDIES </H1>
+<BR>
+<H2> Application for Graduate Addmission </H2>
+<HR>
+<FORM NAME="application" ONSUBMIT="javascript:return isReady(this);" METHOD="post" ACTION="LEVEL_7.php">
+	<TABLE>
+			<TH colspan="3"> <H2>Section 1 : PERSONAL INFORMATION </H2> </TH>
+			<TR>
+			<TD rowspan="3"> <PRE><B><FONT size="4">Name : 				</FONT></B></PRE></TD> <TD><INPUT TYPE="text" NAME="lName" SIZE="30"></TD> <TD> <I>(Last family)</I> </TD>
+			</TR>
+			<TR>
+			<TD> <INPUT TYPE="text" NAME="fName" SIZE="30"></TD> <TD> <I> (First (given))</I> </TD>
+			</TR>
+			<TR>
+			<TD> <INPUT TYPE="text" NAME="mName" SIZE="30"></TD> <TD> <I> (Middle)</I> </TD>
+			</TR>
+			<TR> </TR>
+			<TR>
+			<TD> <B><FONT SIZE="4"> Have you ever applied for postgraduate <BR> studies at the University of Peradeniya: </FONT> </B> </TD> <TD> Yes<INPUT TYPE="radio" NAME="app" VALUE="Y"/>	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp No<INPUT TYPE="radio" NAME="app" VALUE="N"/>	</TD>
+			</TR>
+			<TR> </TR>
+			<TR>
+			<TD> <B><FONT SIZE="4"> Marital Status: </FONT></B> </TD> <TD> Single &nbsp &nbsp &nbsp &nbsp <INPUT TYPE="radio" NAME="marry" VALUE="S"/>	&nbsp &nbsp &nbsp Married &nbsp <INPUT TYPE="radio" NAME="marry" VALUE="M"/></TD>
+			</TR>
+			<TR>
+			<TD> </TD> <TD>Widowed <INPUT TYPE="radio" NAME="marry" VALUE="W"/>&nbsp &nbsp &nbsp &nbsp Divorced <INPUT TYPE="radio" NAME="marry" VALUE="D"/> </TD>
+			</TR>
+			<TR> </TR>
+			<TR>
+			<TD> <B><FONT SIZE="4">National Identification Number: </FONT></B> </TD> <TD> <INPUT TYPE="text" NAME="NID" SIZE="10">	</TD>
+			</TR>
+			<TR> </TR>
+			<TR>
+			<TD> <B><FONT SIZE="4"> Gender: </FONT></B> </TD> <TD> Male <INPUT TYPE="radio" NAME="gender" VALUE="M"/>	&nbsp &nbsp &nbsp Female<INPUT TYPE="radio" NAME="gender" VALUE="F"/></TD>
+			</TR>
+			<TR> </TR>
+			<TR>
+			<TD> <B><FONT SIZE="4"> Date of Birth: </FONT></B> </TD> <TD> <INPUT TYPE="date" NAME="DOB" SIZE="10"> <I><U> Ex: 1980-02-15 </I></U></TD>
+			</TR> 
+			<TR> </TR>
+			<TR>
+			<TD> <B><FONT SIZE="4"> Mailing Address: </FONT></B> </TD> <TD> <INPUT TYPE="text" NAME="noStreet" SIZE="50" value="No, Street"></TD> <TD> <INPUT TYPE="text" NAME="city" SIZE="50" value="City"></TD>
+			</TR>
+			<TR> </TR>
+			<TR>
+			<TD></TD> <TD> <INPUT TYPE="text" NAME="state" SIZE="50" value="State"></TD> <TD> <INPUT TYPE="text" NAME="pCode" SIZE="10" value="Postal Code"></TD>
+			</TR>
+			<TR> </TR>
+			<TR>
+			<TD><B><FONT SIZE="4"> E-mail Address: </FONT></B> </TD> <TD> <INPUT TYPE="text" NAME="email" SIZE="30"></TD> <TD><U> <I> Ex: John@yahoo.com </I> </U></TD>
+			</TR>
+			<TR> </TR>
+			<TR>
+			<TD></TD><TD></TD><TD><INPUT NAME="button1" TYPE="submit" VALUE="NEXT"></TD>
+			</TR>
+			<TR> </TR>
+	</TABLE>
+</BODY>		
+</HTML>
